@@ -7,7 +7,7 @@ import {
     SimpleBlock,
     Text,
     UserBlock
-} from '../../styles/card'
+} from '../../styles/card.js'
 
 export const Card = (props) => {
 
