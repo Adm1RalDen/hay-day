@@ -5,6 +5,7 @@ const WelcomePage = () => {
   return (
     <Welcome>
       <Title>Weclome to Hay Day</Title>
+      hello worlld
     </Welcome>
   )
 }
