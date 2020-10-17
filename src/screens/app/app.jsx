@@ -2,7 +2,10 @@ import React from 'react'
 import Layout from '../../components/layout/layout'
 
 const App = () => {
-  return <Layout>hello world</Layout>
+  return (
+    <Layout>
+    </Layout>
+  )
 }
 
 export default App
