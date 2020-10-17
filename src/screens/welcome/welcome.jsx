@@ -18,14 +18,14 @@ const WelcomePage = () => {
 
   return (
     <Welcome>
-      <Title>Welcome to Hay Day</Title>
+      <Title>Привіт сударь</Title>
       <Link to={`/new-user/${userId}`}>
         <Button
           type="danger "
           title="Add your account"
           onClick={handleClickToBtn}
         >
-          Add your account
+         Добавити акаунт
         </Button>
       </Link>
     </Welcome>

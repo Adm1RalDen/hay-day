@@ -16,6 +16,11 @@ export const LayoutContainer = styled.div`
   margin-right: auto;
   background: white;
   flex: 1;
+  @media (max-width: 812px) {
+    max-width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+  }
 `
 
 export const BlurBackground = styled.div`
