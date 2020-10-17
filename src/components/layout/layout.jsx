@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, LayoutContainer, BlurBackground } from '../../styles/layout'
+import { Layout, LayoutContainer, BlurBackground } from '../../styles/layout.js'
 
 const LayoutComponent = (props) => {
   return (
