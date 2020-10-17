@@ -21,7 +21,7 @@ export const LayoutContainer = styled.div`
 export const BlurBackground = styled.div`
   width: 100vw;
   height: 100vh;
-  background: url('background.jpg') no-repeat;
+  background: url('/background.jpg') no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;

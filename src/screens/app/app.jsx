@@ -1,21 +1,23 @@
 import React from 'react'
-import { Route, Router, Switch } from 'react-router-dom'
-import { createBrowserHistory } from 'history'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import Layout from '../../components/layout/layout'
 import Welcome from '../welcome/welcome'
 import 'antd/dist/antd.css'
-
-const history = createBrowserHistory()
+import NewUser from '../new-user/new-user'
 
 const App = () => {
   return (
     <Layout>
-      <Router history={history}>
+      <Router>
         <Switch>
-          <Route path="/" components={Welcome} />
+          <Route path="/" exact>
+            <Welcome />
+          </Route>
+          <Route path="/new-user/:userId" exact>
+            <NewUser />
+          </Route>
         </Switch>
       </Router>
-      <Welcome />
     </Layout>
   )
 }
