@@ -3,6 +3,7 @@ export const USERS_ACTIONS = {
   CHANGE_ACCOUNT_NAME: 'users/CHANGE_ACCOUNT_NAME',
   CHANGE_ACCOUNT_LEVEL: 'users/CHANGE_ACCOUNT_LEVEL',
   CHANGE_ITEM_COUNTS: 'users/CHANGE_ITEM_COUNTS',
+  SET_USERS_DATA_FROM_STORAGE: 'users/SET_USERS_DATA_FROM_STORAGE',
 }
 
 export const AddNewUser = (id) => ({
@@ -27,4 +28,9 @@ export const ChangeItemCounts = (counts, indexAcc, indexItm) => ({
   counts,
   indexAcc,
   indexItm,
+})
+
+export const SetUsersDataFromStorage = (data) => ({
+  type: USERS_ACTIONS.SET_USERS_DATA_FROM_STORAGE,
+  data,
 })

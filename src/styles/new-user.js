@@ -35,3 +35,18 @@ export const ItemsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
 `
+
+export const SubmitForm = styled.button`
+  margin: 0 auto;
+  display: block;
+  background: #ff3838;
+  border: none;
+  padding: 10px 20px;
+  color: wheat;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+`

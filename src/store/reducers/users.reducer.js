@@ -40,12 +40,18 @@ const users = (state = InitialUserState, action) => {
       })
     }
 
+    case USERS_ACTIONS.SET_USERS_DATA_FROM_STORAGE: {
+      return produce(state, (draft) => {
+        draft.usersData = JSON.parse(JSON.stringify(action.data))
+      })
+    }
+
     default:
       return state
   }
 }
 
-const itemList = [
+export const itemList = [
   'Apple',
   'Apple_Jam',
   'Apple_Juice',
