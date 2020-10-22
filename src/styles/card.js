@@ -22,6 +22,9 @@ export const Text = styled.span`
   font-size: 20px;
   color: white;
   font-weight: bold;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
 `
 
 export const UserBlock = styled.div`

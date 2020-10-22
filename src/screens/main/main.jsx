@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Card } from '../../components/card/card'
-import { itemList } from '../../store/reducers/users.reducer'
+import itemList from '../../constants/itemsList.json'
 import { MainPageContainer } from '../../styles/main'
 
 
@@ -29,8 +29,8 @@ const Main = () => {
 
   return (
     <MainPageContainer>
-      {Object.entries(reduceData).map((e) => (
-        <Card name={e[0]} data={e[1]} />
+      {Object.entries(reduceData).map((e, i) => (
+        <Card name={e[0]} data={e[1]} key={i} />
       ))}
     </MainPageContainer>
   )
