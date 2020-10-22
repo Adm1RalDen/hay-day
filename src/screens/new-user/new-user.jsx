@@ -43,7 +43,7 @@ const NewUserPage = () => {
   const SaveData = (e) => {
     e.preventDefault()
     storage.saveUsersData(data)
-    storage.setIsShowMainPage(false)
+    storage.setIsShowMainPage(true)
     history.push('/main')
   }
 

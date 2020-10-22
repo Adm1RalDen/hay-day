@@ -28,13 +28,13 @@ export const BlurBackground = styled.div`
   height: 100vh;
   background: url('/background.jpg') no-repeat;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 `

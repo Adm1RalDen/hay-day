@@ -17,13 +17,8 @@ export const Card = (props) => {
 
   return (
     <CardContainer>
-      <RelativeContainer>
-        <Icon src={icon} size={100} title={rusName}/>
-        <AbsoluteContainer
-          style={{ zIndex: 123, top: '50%', left: '65%' }}
-        >
-          <Text style={{ width: '100%', fontSize: '2.5em', textShadow: 'black -2.1px 2.3px 1px' }}>{data.totalCount}</Text>
-        </AbsoluteContainer>
+      <RelativeContainer number={data.totalCount}>
+        <Icon src={icon} size={60} title={rusName} />
       </RelativeContainer>
       {data.inUsersListCount.map((e) => (
         <UserLine
@@ -42,21 +37,12 @@ const UserLine = (props) => {
   return (
     <UserBlock>
       <SimpleBlock>
-        <Text fs="1.5em" style={{ marginRight: 10 }}>
+        <Text style={{ marginRight: 10 }} textShadow>
           {user}
         </Text>
-        <RelativeContainer>
-          <Icon src="img/lvl.png" size={25}/>
-          <AbsoluteContainer
-            style={{ zIndex: 123, top: '0.1em', left: '0.45em' }}
-          >
-            <Text style={{ textShadow: 'black 2px 3px 4px', fontSize: '0.7em' }}>
-              {level}
-            </Text>
-          </AbsoluteContainer>
-        </RelativeContainer>
+        <Text textShadow>{level}</Text>
       </SimpleBlock>
-      <Text fs="1.5em">{count}</Text>
+      <Text textShadow>{count}</Text>
     </UserBlock>
   )
 }

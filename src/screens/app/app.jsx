@@ -19,7 +19,7 @@ const App = () => {
 
   useEffect(() => {
     const { isShowMainPage, usersData } = storage.getStorageData()
-    setState(isShowMainPage ? JSON.parse(isShowMainPage) : false)
+    setState(isShowMainPage ? JSON.parse(isShowMainPage) : true)
     if (usersData) {
       dispatch(SetUsersDataFromStorage(JSON.parse(usersData)))
     }
