@@ -62,6 +62,7 @@ const NewUserPage = () => {
         />
         <ItemsContainer>
           {currentUser.items.map((item, index) => {
+
             return (
               <Item key={item.name}>
                 <ItemImg src={`/img/${item.name}.png`} alt={item.name} />
